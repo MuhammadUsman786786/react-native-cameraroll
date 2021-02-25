@@ -522,7 +522,7 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
       boolean imageInfoSuccess =
         putImageInfo(resolver, media, node, widthIndex, heightIndex, sizeIndex, dataIndex,
           mimeTypeIndex, includeFilename, includeFileSize, includeImageSize,
-          includePlayableDuration);
+          true);
       if (imageInfoSuccess) {
         putBasicNodeInfo(media, node, mimeTypeIndex, groupNameIndex, dateTakenIndex);
         putLocationInfo(media, node, dataIndex, includeLocation);
